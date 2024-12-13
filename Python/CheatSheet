@@ -1,2 +1,12 @@
 CheatSheet
 
+Dictionary:
+  Creation: 
+    CharMaps = {}
+  Appending:
+    CharMaps["thing"] = "this"
+  Checking Existence:
+    if "thing" in CharMaps
+
+
+  
