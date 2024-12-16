@@ -1,0 +1,14 @@
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        topK = defaultdict(int)
+
+        for n in nums:
+            topK[n] += 1
+        topK_desc = sorted(topK.items(), key=lambda item: item[1], reverse=True)
+        
+        topList = []
+
+        for j in range(k):
+            topList.append(topK_desc[j][0])
+        return topList
+
